@@ -1,0 +1,216 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.react-calendar {
+  width: 1889px;
+  height: 350px;
+  background-color: black;
+  border: none;
+}
+
+/* Weekday and day rows background fix */
+.react-calendar__month-view__weekdays,
+.react-calendar__month-view__days {
+  background-color: transparent;
+}
+
+/* Base tile styling */
+.react-calendar__tile {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+ 
+
+/* Hover effect */
+.react-calendar__tile:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: scale(1.1);
+}
+
+/* Current date (today) styling */
+.react-calendar__tile--now {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  border: 1px solid #ffffff33;
+}
+
+/* Navigation buttons */
+.react-calendar__navigation {
+  background-color: #333;
+  color: white;
+}
+
+.react-calendar__navigation button {
+  background-color: #3a3a3a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #858585;
+}
+
+.react-calendar__navigation__arrow {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.react-calendar__navigation__arrow:hover {
+  color: #ffeb3b;
+}
+
+/* Styling the selected date (priority colored) */
+.react-calendar__tile.selected-date {
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.react-calendar__tile.selected-date.high {
+  border-color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.2);
+}
+
+.react-calendar__tile.selected-date.medium {
+  border-color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.2);
+}
+
+.react-calendar__tile.selected-date.low {
+  border-color: #28a745;
+  background-color: rgba(40, 167, 69, 0.2);
+}
+
+/* Goals inside the tile */
+.tile-goals {
+  list-style: none;
+  padding: 0;
+  margin: 2px 0 0;
+  font-size: 0.6em;
+  line-height: 1.1em;
+  max-height: 3.3em;
+  overflow: hidden;
+  color: white;
+}
+
+.tile-goal {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tile-goal.high {
+  color: #ff4d4d;
+}
+
+.tile-goal.medium {
+  color: #ffc107;
+}
+
+.tile-goal.low {
+  color: #28a745;
+}
+
+.tile-goal.more {
+  color: gray;
+}
+
+/* Day cell styling */
+.react-calendar__month-view__days__day {
+  font-size: 18px;
+  padding: 20px;
+  padding-left: 20px;
+  border-style: solid white;
+  border: 5px white;
+}
+
+/* Goals list display under calendar */
+.goals-section {
+  margin-top: 30px;
+}
+
+input[type='text'] {
+  padding: 8px;
+  width: 70%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.priority-buttons {
+  margin: 10px 0;
+}
+
+.priority-buttons button {
+  margin-right: 10px;
+  padding: 5px 12px;
+  border: 5px solid #7e6e6e;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.priority-buttons button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.add-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tag {
+  margin-left: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.tag.high {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.tag.medium {
+  background-color: #ffc107;
+  color: black;
+}
+
+.tag.low {
+  background-color: #28a745;
+  color: white;
+}
+
+p {
+  margin-top: 650px;
+  font-size: 18px;
+  color: white;
+}
+
