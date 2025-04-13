@@ -45,6 +45,7 @@ function App() {
       alert("Your browser does not support desktop notifications.");
       return;
     }
+    alert("Notification is about to be shown!");
 
     if (Notification.permission === "granted") {
       new Notification("New Goal Added!", {
