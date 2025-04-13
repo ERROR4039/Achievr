@@ -1,4 +1,5 @@
+import react from '@vitejs/plugin-react';
+
 export default {
-  base: '/Achievr/',  // Make sure this matches your repository name
-  // other configurations...
+  plugins: [react()],
 };
