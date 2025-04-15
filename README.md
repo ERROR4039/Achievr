@@ -23,3 +23,4 @@
 
 Achievr isn’t just a to-do list—it’s your personal productivity partner. Stay focused. Stay sharp. Stay achieving.
 
+![Screenshot 2025-04-15 180006](https://github.com/user-attachments/assets/ba4633ee-75c2-4acd-8cc1-84f5f26ee438)
